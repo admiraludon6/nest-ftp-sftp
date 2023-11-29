@@ -8,7 +8,7 @@ export class FtpController {
 
     @Get('download-transform-upload')
     async downloadAndModifyFile(): Promise<string> {
-        const fileName = "config.yaml";
+        const fileName = "test.txt";
         const remoteFilePath = `${process.env.FTP_PATH}/${fileName}`;
         const localFilePath = resolve(`./src/storage/downloads/${fileName}`);
         

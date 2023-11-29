@@ -8,7 +8,7 @@ export class SftpController {
 
     @Get('download-transform-upload')
     async downloadAndModifyFile(): Promise<string> {
-        const fileName = "config.yaml";
+        const fileName = "test.txt";
         const remoteFilePath = `${process.env.SFTP_PATH}/${fileName}`;
         const localFilePath = resolve(`./src/storage/downloads/${fileName}`);
 
